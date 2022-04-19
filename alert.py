@@ -1,9 +1,12 @@
+from crypt import methods
 import smtplib
+from urllib import request
 
 import xlrd
 import csv
 import pandas as pd
 from email.message import EmailMessage
+from flask import Flask, render_template, request
 # from email.MIMEText import MIMEText
 
 def find_carrier(phone, carrier): 
@@ -63,47 +66,42 @@ def email_alert(subject, body, to):
     server.send_message(msg)
     server.quit()
 
+#################################################
+
+app = Flask(__name__)
+
+@app.route("/", methods=['POST', "GET"])
+    
+def csv_upload():
+    if request.methods == "POST":
+        print(request.files)
+        # image = request.files['file']
+
+    return render_template("csv_upload.html")
+
+app.run(port=5000)
+
 if __name__ == '__main__':
 
-    # Create a dataframe from csv
-    df = pd.read_csv('projects\\address_book.csv', delimiter=',')
-    # User list comprehension to create a list of lists from Dataframe rows
-    contact_list = [list(row) for row in df.values]
-    # Print list of lists i.e. rows
-    print(contact_list)
+    # # Create a dataframe from csv
+    # df = pd.read_csv('projects\\address_book.csv', delimiter=',')
+    # # User list comprehension to create a list of lists from Dataframe rows
+    # contact_list = [list(row) for row in df.values]
+    # # Print list of lists i.e. rows
+    # print(contact_list)
 
-    # dict = [
+    # # "Wellspring Generation:", "Test for Audio Bible Study Text Alerts"
+    # subject = "Wellspring Generation:"
+    # body = 'Click to start or join a scheduled Zoom meeting: ' + 'https://zoom.us/j/8383264131?pwd=eUJJMkpkdGIzRTNPcyt2aXNGcXJFQT09'
 
-    #     {'name': 'rebecca', 
-    #     'phone': '6262656501', 
-    #     'carrier': 'att'}, 
-
-    #     {'name': 'robin', 
-    #     'phone': '8184478352',
-    #     'carrier': 'boost'}
-    # ]
-
-    # for contact in dict: 
-    #     phone = contact['phone']
-    #     carrier = contact['carrier']
-    #     print(phone)
-    #     print(carrier)
-
-    # "Wellspring Generation:", "Test for Audio Bible Study Text Alerts"
-    subject = "Wellspring Generation:"
-    body = 'Click to start or join a scheduled Zoom meeting: ' + 'https://zoom.us/j/8383264131?pwd=eUJJMkpkdGIzRTNPcyt2aXNGcXJFQT09'
-
-    for contact in contact_list: 
-        phone = str(contact[1])
-        carrier = str(contact[2])
-        email = find_carrier(phone, carrier)
-        print(email)
-        email_alert(subject, body, email)
+    # for contact in contact_list: 
+    #     phone = str(contact[1])
+    #     carrier = str(contact[2])
+    #     email = find_carrier(phone, carrier)
+    #     print(email)
+    #     email_alert(subject, body, email)
 
 
-# upload csv file 
-# enter "Subject", "Body", 
-# send email alert -> click button 
 
 
 
