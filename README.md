@@ -6,8 +6,8 @@ Use this page to send Text Alert Messages to a group of contacts.
 
 ```markdown
 1. Upload a CSV File
-2. Enter in Message for Body
-3. Enter in a Subject 
+2. Enter a Subject line
+3. Enter a message for the Body
 4. Push Send
 
 ```
