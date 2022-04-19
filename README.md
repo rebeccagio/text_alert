@@ -11,7 +11,7 @@ Use this page to send Text Alert Messages to a group of contacts.
 4. Push Send
 ```
 ### Upload CSV File
-<a href="./contact.html" target="top">CSV Upload</a>
+<a href="./csv_upload.html" target="top">CSV Upload</a>
 <br>
 <input type="file" name="file_to_upload" id="file_to_upload" accept=".csv">
 <hr>
