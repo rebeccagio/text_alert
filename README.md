@@ -11,7 +11,7 @@ Use this page to send Text Alert Messages to a group of contacts.
 4. Push Send
 ```
 ### Upload CSV File
-
+[Index.html page](https://link-url-here.org)
 ```html
     <h2>DIY HTML5 File Uploader</h2>
     <input type="file" name="file_to_upload" id="file_to_upload">
