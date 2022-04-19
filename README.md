@@ -1,29 +1,15 @@
 ## Text Alert
 
-You can use the [editor on GitHub](https://github.com/rebeccagio/text_alert/edit/site/README.md) to maintain and preview the content for your website in Markdown files.
+Use this page to send Text Alert Messages to a group of contacts. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Start Here
 
 ```markdown
-Syntax highlighted code block
+1. Upload a CSV File
+2. Enter in Message for Body
+3. Enter in a Subject 
+4. Push Send
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
