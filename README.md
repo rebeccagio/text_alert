@@ -13,7 +13,7 @@ Use this page to send Text Alert Messages to a group of contacts.
 ### Upload CSV File
 <a href="./contact.html" target="top">CSV Upload</a>
 <br>
-<input type="file" name="file_to_upload" id="file_to_upload">
+<input type="file" name="file_to_upload" id="file_to_upload" accept=".csv">
 <hr>
 <input type="button" value="Upload To Server" id="upload_file_button">
 
