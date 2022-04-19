@@ -11,10 +11,10 @@ Use this page to send Text Alert Messages to a group of contacts.
 4. Push Send
 ```
 ### Upload CSV File
-<a href="./contact.html" target="top">CSV Upload</a>
-<h2>DIY HTML5 File Uploader</h2>
- <input type="file" name="file_to_upload" id="file_to_upload">
- <hr>
+<a href="./csv_upload.html" target="top">CSV Upload</a>
+<br>
+<input type="file" name="file_to_upload" id="file_to_upload" accept=".csv">
+<hr>
 <input type="button" value="Upload To Server" id="upload_file_button">
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
